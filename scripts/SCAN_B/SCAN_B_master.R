@@ -42,6 +42,9 @@ for (i in functions_list) {
 # Creating a summary DF to create figures from (all functions query this df)
 #################################################################
 SCAN_B_QUERY_DF <- SCAN_B_subset(GSE96058_GE, GSE96058_Clinical_DF, T, QUERY_GENES, CALCULATE_QUANTILE = "TNFRSF12A")
+# Converting endocrine and chemo to integer
+SCAN_B_QUERY_DF$ENDOCRINE_TREATED <- SCAN_B_QUERY_DF$ENDOCRINE_TREATED %>% as.integer() %>% factor()
+SCAN_B_QUERY_DF$CHEMO_TREATED <- SCAN_B_QUERY_DF$CHEMO_TREATED %>% as.integer() %>% factor()
 
 #################################################################
 # Adding HR/HER2 subtype
