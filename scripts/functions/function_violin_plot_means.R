@@ -8,7 +8,7 @@ jhf_clin_violin_plot_means <- function(INPUT_DF, XVAR, YVAR, XVAR_LAB, YVAR_LAB,
   # YVAR = "TNFRSF12A_CPM"
   # INPUT_DF = TCGA_DF
   # XVAR_LAB = VARS[2]
-  # YVAR_LAB = "Fn14 Log(2) CPM"
+  # YVAR_LAB = "Fn14 Log(2) FPKM"
   # LOG2_TRANSFROM = T
   
   # Log transforming

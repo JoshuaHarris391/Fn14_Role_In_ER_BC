@@ -27,7 +27,7 @@ VARS <- c("LYMPH_NODE_STATUS",
 # Creating plots
 for (i in VARS) {
   print(paste0(i))
-  TCGA_VIOLIN_PLOTS_LIST[[paste0(i)]] <- jhf_clin_violin_plot(SCAN_B_QUERY_DF_ER_POS, i, "TNFRSF12A", i, "Fn14 Log(2) CPM", LOG2_TRANSFROM = F)
+  TCGA_VIOLIN_PLOTS_LIST[[paste0(i)]] <- jhf_clin_violin_plot(SCAN_B_QUERY_DF_ER_POS, i, "TNFRSF12A", i, "Fn14 Log(2) FPKM", LOG2_TRANSFROM = F)
 }
 
 # Saving small plots

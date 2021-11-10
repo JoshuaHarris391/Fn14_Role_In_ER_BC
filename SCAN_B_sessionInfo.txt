@@ -1,0 +1,33 @@
+R version 4.1.2 (2021-11-01)
+Platform: x86_64-apple-darwin17.0 (64-bit)
+Running under: macOS Catalina 10.15.7
+
+Matrix products: default
+BLAS:   /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libBLAS.dylib
+LAPACK: /Library/Frameworks/R.framework/Versions/4.1/Resources/lib/libRlapack.dylib
+
+locale:
+[1] en_NZ.UTF-8/en_NZ.UTF-8/en_NZ.UTF-8/C/en_NZ.UTF-8/en_NZ.UTF-8
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+ [1] EnvStats_2.4.0  forcats_0.5.1   stringr_1.4.0   dplyr_1.0.7     purrr_0.3.4     readr_2.0.2    
+ [7] tidyr_1.1.4     tibble_3.1.5    ggplot2_3.3.5   tidyverse_1.3.1
+
+loaded via a namespace (and not attached):
+ [1] Rcpp_1.0.7        lubridate_1.8.0   lattice_0.20-45   digest_0.6.28     assertthat_0.2.1 
+ [6] psych_2.1.9       utf8_1.2.2        R6_2.5.1          cellranger_1.1.0  backports_1.3.0  
+[11] reprex_2.0.1      httr_1.4.2        pillar_1.6.4      rlang_0.4.12      curl_4.3.2       
+[16] readxl_1.3.1      rstudioapi_0.13   data.table_1.14.2 car_3.0-11        Matrix_1.3-4     
+[21] splines_4.1.2     labeling_0.4.2    foreign_0.8-81    munsell_0.5.0     broom_0.7.10     
+[26] compiler_4.1.2    modelr_0.1.8      pkgconfig_2.0.3   mnormt_2.0.2      tmvnsim_1.0-2    
+[31] mgcv_1.8-38       tidyselect_1.1.1  rio_0.5.27        fansi_0.5.0       crayon_1.4.2     
+[36] tzdb_0.2.0        dbplyr_2.1.1      withr_2.4.2       ggpubr_0.4.0      grid_4.1.2       
+[41] nlme_3.1-153      jsonlite_1.7.2    gtable_0.3.0      lifecycle_1.0.1   DBI_1.1.1        
+[46] magrittr_2.0.1    scales_1.1.1      zip_2.2.0         cli_3.1.0         stringi_1.7.5    
+[51] carData_3.0-4     farver_2.1.0      ggsignif_0.6.3    fs_1.5.0          xml2_1.3.2       
+[56] ellipsis_0.3.2    generics_0.1.1    vctrs_0.3.8       openxlsx_4.2.4    tools_4.1.2      
+[61] glue_1.4.2        hms_1.1.1         abind_1.4-5       parallel_4.1.2    colorspace_2.0-2 
+[66] rstatix_0.7.0     rvest_1.0.2       haven_2.4.3      
