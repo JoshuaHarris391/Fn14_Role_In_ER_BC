@@ -11,7 +11,6 @@
 # Clear Environment and Load Cleaned Data
 #################################################################
 rm(list = ls())
-# system("rm -R ./outputs")
 library(tidyverse)
 load(file = "data/GSE96058_Cleaned.RData")
 
