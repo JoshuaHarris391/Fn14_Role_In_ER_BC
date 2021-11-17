@@ -1,0 +1,2 @@
+"HR"	"95% CI"	"Lower 95% CI"	"Upper 95% CI"	"Hazard Ratio (95% CI)"	"pValue"	"Rounded P-value"	"Sig"
+"ESR1_TERT"	"0.974"	"(0.69 to 1.38)"	0.69	1.38	"0.97   (0.69 to 1.38)"	0.880657	"0.881"	"N.S"

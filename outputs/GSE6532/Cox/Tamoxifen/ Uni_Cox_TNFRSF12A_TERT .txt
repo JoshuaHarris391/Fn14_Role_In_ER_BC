@@ -1,0 +1,2 @@
+"HR"	"95% CI"	"Lower 95% CI"	"Upper 95% CI"	"Hazard Ratio (95% CI)"	"pValue"	"Rounded P-value"	"Sig"
+"TNFRSF12A_TERT"	"0.724"	"(0.56 to 0.94)"	0.56	0.94	"0.72   (0.56 to 0.94)"	0.015017	"0.015"	"*"

@@ -1,0 +1,2 @@
+"HR"	"95% CI"	"Lower 95% CI"	"Upper 95% CI"	"Hazard Ratio (95% CI)"	"pValue"	"Rounded P-value"	"Sig"
+"er"	"0.215"	"(0.07 to 0.69)"	0.07	0.69	"0.22   (0.07 to 0.69)"	0.009519	"0.01"	"**"
