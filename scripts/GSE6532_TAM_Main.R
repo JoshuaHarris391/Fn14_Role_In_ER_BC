@@ -1,4 +1,7 @@
-# Loading in data
+#################################################################
+# Clear Environment and Load Cleaned Data
+#################################################################
+rm(list = ls())
 library(tidyverse)
 load(file = "data/GSE6532_LUMINAL.RData")
 
