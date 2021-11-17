@@ -12,7 +12,7 @@
 - [TNFRSF12A mRNA tertile expression - RFS](../GSE6532/Cox/Tamoxifen/Uni_Cox_TNFRSF12A_TERT.csv)
 
 ## Multivariate Cox Models
-Covariates consist of age (continuous), node status (binary, 0,1), grade (semi-continuous, 1,2,3), and tumour size (continuous). PAM50 subtype is coded as a categorical variable with Luminal A as the baseline.
+Covariates consist of age (continuous), node status (binary, 0,1), grade (semi-continuous, 1,2,3), and tumour size (continuous). PAM50 subtype is coded as a categorical variable with Normal-like as the baseline.
 
 - [ER IHC Status - RFS](../GSE6532/Cox/Tamoxifen/Multi_Cox_ER_IHC.csv)
 - [ESR1 mRNA tertile expression - RFS](../GSE6532/Cox/Tamoxifen/Multi_Cox_ESR1_TERT.csv)
@@ -31,7 +31,7 @@ Covariates consist of age (continuous), node status (binary, 0,1), grade (semi-c
 - [TNFRSF12A mRNA tertile expression - RFS](../GSE6532/Cox/Untreated/Uni_Cox_TNFRSF12A_TERT.csv)
 
 ## Multivariate Cox Models
-Covariates consist of age (continuous), node status (binary, 0,1), grade (semi-continuous, 1,2,3), and tumour size (continuous). PAM50 subtype is coded as a categorical variable with Luminal A as the baseline.
+Covariates consist of age (continuous), node status (binary, 0,1), grade (semi-continuous, 1,2,3), and tumour size (continuous). PAM50 subtype is coded as a categorical variable with Normal-like as the baseline.
 
 - [ER IHC Status - RFS](../GSE6532/Cox/Untreated/Multi_Cox_ER_IHC.csv)
 - [ESR1 mRNA tertile expression - RFS](../GSE6532/Cox/Untreated/Multi_Cox_ESR1_TERT.csv)
