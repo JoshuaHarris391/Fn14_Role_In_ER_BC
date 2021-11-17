@@ -1,5 +1,6 @@
 SCAN_B_subset <- function(INPUT_DF, CLIN_DF, OUTPUT_CLIN = T, INPUT_GENES, CALCULATE_QUANTILE = F){
   
+  # library(tidyverse)
   # # Input_DF
   # INPUT_DF <- GSE96058_GE
   # # Input Clinical DF
@@ -25,11 +26,10 @@ SCAN_B_subset <- function(INPUT_DF, CLIN_DF, OUTPUT_CLIN = T, INPUT_GENES, CALCU
     INPUT_GENES[!(INPUT_GENES %in% found_genes)] %>% paste(., "not found", sep = " ") %>% print()
   }
   
-  
   # creating df
   if (OUTPUT_CLIN == T) {
     PLOT_DF <- INPUT_DF[gene_row, ] %>% 
-      select(., !(GENE)) %>% 
+      dplyr::select(., !(GENE)) %>% 
       t() %>% 
       as.data.frame()
     colnames(PLOT_DF) <-found_genes

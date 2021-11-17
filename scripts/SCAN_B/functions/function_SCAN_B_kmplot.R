@@ -52,7 +52,7 @@ SCAN_B_kmplot <- function(INPUT_DF, INPUT_GENE, CLIN_SUBSET_VAR, CLIN_SUBSET_FAC
     # Defining essential variables
     essential_col <- c(paste(INPUT_GENE), "TITLE_ID", "OVERALL_SURVIVAL_MONTHS", "OVERALL_SURVIVAL_EVENT", "PGR_STATUS", "ER_STATUS", "HER2_STATUS")
     # Selecting essential variables and clinical variable
-    PLOT_DF <- select(PLOT_DF, c(all_of(essential_col), all_of(CLIN_SUBSET_VAR)))
+    PLOT_DF <- dplyr::select(PLOT_DF, c(all_of(essential_col), all_of(CLIN_SUBSET_VAR)))
     # Subsetting clinical variable by factor
     PLOT_DF <- filter(PLOT_DF, PLOT_DF[, CLIN_SUBSET_VAR] == !!CLIN_SUBSET_FACTOR)
   }

@@ -4,11 +4,11 @@
 
 # Creating subset DF lists
 KM_Plot_List <- list()
-KM_Plot_List[["ER_Pos"]] <- GENE_EXP_ER_P %>% select(DMFS_TIME, DMFS_EVENT, Fn14_TERT_GROUP, Fn14_TERT)
-KM_Plot_List[["PR_Pos"]] <- GENE_EXP_PR_P %>% select(DMFS_TIME, DMFS_EVENT, Fn14_TERT_GROUP, Fn14_TERT)
-KM_Plot_List[["HR_Pos"]]<- GENE_EXP_HR_P %>% select(DMFS_TIME, DMFS_EVENT, Fn14_TERT_GROUP, Fn14_TERT)
-KM_Plot_List[["HR_Pos_Endo_Mono_T"]]<- GENE_EXP_HR_P_Endo_Mono_T %>% select(DMFS_TIME, DMFS_EVENT, Fn14_TERT_GROUP, Fn14_TERT)
-KM_Plot_List[["HR_Pos_Chemo_Endo"]]<- GENE_EXP_HR_P_Chemo_Endo %>% select(DMFS_TIME, DMFS_EVENT, Fn14_TERT_GROUP, Fn14_TERT)
+KM_Plot_List[["ER_Pos"]] <- GENE_EXP_ER_P %>% dplyr::select(DMFS_TIME, DMFS_EVENT, Fn14_TERT_GROUP, Fn14_TERT)
+KM_Plot_List[["PR_Pos"]] <- GENE_EXP_PR_P %>% dplyr::select(DMFS_TIME, DMFS_EVENT, Fn14_TERT_GROUP, Fn14_TERT)
+KM_Plot_List[["HR_Pos"]]<- GENE_EXP_HR_P %>% dplyr::select(DMFS_TIME, DMFS_EVENT, Fn14_TERT_GROUP, Fn14_TERT)
+KM_Plot_List[["HR_Pos_Endo_Mono_T"]]<- GENE_EXP_HR_P_Endo_Mono_T %>% dplyr::select(DMFS_TIME, DMFS_EVENT, Fn14_TERT_GROUP, Fn14_TERT)
+KM_Plot_List[["HR_Pos_Chemo_Endo"]]<- GENE_EXP_HR_P_Chemo_Endo %>% dplyr::select(DMFS_TIME, DMFS_EVENT, Fn14_TERT_GROUP, Fn14_TERT)
 
 
 # Inspecting List

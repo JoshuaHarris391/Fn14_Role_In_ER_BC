@@ -40,7 +40,7 @@ BC2116_subset <- function(INPUT_DF, CLIN_DF, OUTPUT_CLIN, INPUT_GENES, RETURN_PR
   
   # Subsetting DF for all found probes
   PLOT_DF <- INPUT_DF[m, ] %>% 
-    select(., !(GENE) & !(PROBE)) %>% 
+    dplyr::select(., !(GENE) & !(PROBE)) %>% 
     t() %>% 
     as.data.frame()
 
@@ -51,7 +51,7 @@ BC2116_subset <- function(INPUT_DF, CLIN_DF, OUTPUT_CLIN, INPUT_GENES, RETURN_PR
     # extract probes for gene iteration
     probes <- probe_list[[gene_name]]
     # select probes
-    tmp_df <- PLOT_DF %>% select(all_of(probes))
+    tmp_df <- PLOT_DF %>% dplyr::select(all_of(probes))
     # Calculate colmeans
     val_col_means <- apply(tmp_df, 2, mean)
     # Find col with highest average, save probe name to list
@@ -64,14 +64,14 @@ BC2116_subset <- function(INPUT_DF, CLIN_DF, OUTPUT_CLIN, INPUT_GENES, RETURN_PR
   # creating df
   if (OUTPUT_CLIN == T) {
     PLOT_DF <- INPUT_DF[m, ] %>% 
-    select(., !(GENE) & !(PROBE)) %>% 
+    dplyr::select(., !(GENE) & !(PROBE)) %>% 
       t() %>% 
       as.data.frame()
     colnames(PLOT_DF) <- names(optimal_probe)
   } else if (OUTPUT_CLIN == F){
     PLOT_DF <- INPUT_DF[m, ]
     rownames(PLOT_DF) <- PLOT_DF$GENE
-    PLOT_DF <- select(PLOT_DF, !(GENE) & !(PROBE))
+    PLOT_DF <- dplyr::select(PLOT_DF, !(GENE) & !(PROBE))
   }
   
   

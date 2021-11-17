@@ -83,7 +83,7 @@ HR_Pos_HER2_Neg_EndoMonoT <- SCAN_B_QUERY_DF %>% filter(., IHC_SUBTYPE == "HR-Po
 HR_Pos_HER2_Neg_EndoMonoT_Scatter <- SCAN_B_scatter_plot(HR_Pos_HER2_Neg_EndoMonoT, "ESR1", "TNFRSF12A")
 # Saving plot
 source(file = "scripts/functions/function_save_jpeg.R")
-dir.create("outputs/SCAN_B/Scatter_plots")
+dir.create("outputs/SCAN_B/Scatter_plots", recursive = T, showWarnings = F)
 jhf_save_jpeg(HR_Pos_HER2_Neg_EndoMonoT_Scatter, 10, 10, "HR_Pos_HER2_Neg_EndoMonoT_Scatter", "./outputs/SCAN_B/Scatter_plots/")
 
 
@@ -97,7 +97,7 @@ Fn14_Tert_by_ER_Plot <- ggplot(Fn14_Tert_by_ER, aes(fill = QUERY_TERTILE, y=n, x
                               scale_fill_discrete(name = "Fn14 mRNA Tertile") +
                               labs(x = "ER IHC Status", y = "Cases")
 # Saving plot
-dir.create("outputs/SCAN_B/Barplots")
+dir.create("outputs/SCAN_B/Barplots", recursive = T, showWarnings = F)
 jhf_save_jpeg(Fn14_Tert_by_ER_Plot, 10, 10, "Fn14_Tert_by_ER_Plot", "./outputs/SCAN_B/Barplots/")
 # Making tables
 table(SCAN_B_QUERY_DF$ER_STATUS, SCAN_B_QUERY_DF$QUERY_TERTILE) 
@@ -123,9 +123,4 @@ table(SCAN_B_QUERY_DF$IHC_SUBTYPE, SCAN_B_QUERY_DF$QUERY_TERTILE) %>% prop.table
 # Saving session
 writeLines(capture.output(sessionInfo()), "SCAN_B_sessionInfo.txt")
 
-
-#################################################################
-# Run BC2116 Master script
-#################################################################
-# source("./scripts/MASTER_BC2116.R")
 
