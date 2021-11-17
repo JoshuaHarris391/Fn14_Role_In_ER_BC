@@ -94,6 +94,8 @@ jhf_save_jpeg(Fn14_Tert_Prop_Subtype_Plot, 15, 13, "Fn14_Tert_Proportion_Plot_PA
 ####################################################
 # Conducting Cox PH modelling
 ####################################################
+# Making normal-like baseline
+UNTREAT_GENE_CLIN_DF$PAM50 <- factor(UNTREAT_GENE_CLIN_DF$PAM50, levels = c("Normal","Basal",  "Her2",   "LumB",   "LumA"))
 # Initialsing list
 COX_MODELS_LIST <- list()
 # Attaching DF
