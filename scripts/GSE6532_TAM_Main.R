@@ -20,7 +20,7 @@ data.tam %>% na.omit() %>% median()
 data.tam %>% na.omit() %>% sd()
 data.tam %>% na.omit() %>% mean()
 data.tam %>% na.omit() %>% range()
-plot(density((na.omit(data.tam))))
+# plot(density((na.omit(data.tam))))
 
 ####################################################
 # Extracting genes of interest
